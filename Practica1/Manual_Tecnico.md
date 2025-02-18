@@ -8,8 +8,8 @@
 
 **Topología de la Red:** Se han implementado dos switches de capa 2 (modelo 2960) para conectar los departamentos de Sigma Studio. 
 
-La red está organizada en cinco áreas
-: - Arquitectura y Urbanismo
+La red está organizada en cinco áreas:
+  - Arquitectura y Urbanismo
   - Diseño Gráfico y Publicidad
   - Renderizado y Modelado 3D
   - Recepción y Administración
@@ -20,8 +20,9 @@ La red está organizada en cinco áreas
 </p>
 
 
-**Asignación de Direcciones IP**
-: La red utiliza la dirección 192.168.58.0/24
+**Asignación de Direcciones IP:**
+La red utiliza la dirección 192.168.58.0/24
+
 <table>
   <thead>
     <tr>
@@ -160,8 +161,8 @@ La red está organizada en cinco áreas
 </table>
 
 
-**Configuración de los Switches**
-: Switch prod (Producción Creativa)
+**Configuración de los Switches:**
+- Switch prod (Producción Creativa)
 ```
     enable
     configure terminal
@@ -171,7 +172,7 @@ La red está organizada en cinco áreas
     write memory
 ```
 
-Switch admon (Administración y Gestión de Proyectos)
+- Switch admon (Administración y Gestión de Proyectos)
 ```
     enable
     configure terminal
@@ -181,7 +182,7 @@ Switch admon (Administración y Gestión de Proyectos)
     write memory
 ```
 
-**Configuracion de las VPCs**
+**Configuracion de las VPCs:**
 <p align="center">
   <img src="./img/9.png" alt="VPC Arquitectura" width="200px" height="150px">
   <img src="./img/10.png" alt="VPC Diseño" width="200px" height="150px">
@@ -191,9 +192,10 @@ Switch admon (Administración y Gestión de Proyectos)
 </p>
 
 
-**Verificación de Conectividad**
-:  pruebas de ping entre hosts de diferentes áreas
+**Verificación de Conectividad:**
+pruebas de ping entre hosts de diferentes áreas
 
+<div align="center">
 <table>
   <thead>
     <tr>
@@ -230,6 +232,7 @@ Switch admon (Administración y Gestión de Proyectos)
     </tr>
   </tbody>
 </table>
+</div>
 
 <p align="center">
   <img src="./img/2.png" alt="ping1" width="200px">
@@ -240,14 +243,14 @@ Switch admon (Administración y Gestión de Proyectos)
 </p>
 
 
-**Configuración de las VPCs**
+**Configuración de las VPCs:**
 
-paquete ARP
+- paquete ARP
 <p align="center">
   <img src="./img/7.png" alt="ARP" width="550px">
 </p>
 
-paquete ICMP  
+- paquete ICMP  
 <p align="center">
   <img src="./img/8.png" alt="ICMP" width="550px">
 </p>
