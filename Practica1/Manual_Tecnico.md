@@ -6,8 +6,7 @@
 
 ### MANUAL TECNICO
 
-Topología de la Red
-:  Se han implementado dos switches de capa 2 (modelo 2960) para conectar los departamentos de Sigma Studio. 
+**Topología de la Red:** Se han implementado dos switches de capa 2 (modelo 2960) para conectar los departamentos de Sigma Studio. 
 
 La red está organizada en cinco áreas
 : - Arquitectura y Urbanismo
@@ -21,7 +20,7 @@ La red está organizada en cinco áreas
 </p>
 
 
-Asignación de Direcciones IP
+**Asignación de Direcciones IP**
 : La red utiliza la dirección 192.168.58.0/24
 <table>
   <thead>
@@ -161,26 +160,26 @@ Asignación de Direcciones IP
 </table>
 
 
-Configuración de los Switches
+**Configuración de los Switches**
 : Switch prod (Producción Creativa)
-    ```
+```
     enable
     configure terminal
     hostname prod
     enable secret 202000558
     exit
     write memory
-    ```
+```
 
 Switch admon (Administración y Gestión de Proyectos)
-:  ```
+```
     enable
     configure terminal
     hostname admon
     enable secret 202000558
     exit
     write memory
-    ```
+```
 
 **Configuracion de las VPCs**
 <p align="center">
@@ -192,7 +191,7 @@ Switch admon (Administración y Gestión de Proyectos)
 </p>
 
 
-Verificación de Conectividad
+**Verificación de Conectividad**
 :  pruebas de ping entre hosts de diferentes áreas
 
 <table>
@@ -241,7 +240,8 @@ Verificación de Conectividad
 </p>
 
 
-##### Configuración de las VPCs
+**Configuración de las VPCs**
+
 paquete ARP
 <p align="center">
   <img src="./img/7.png" alt="ARP" width="550px">
